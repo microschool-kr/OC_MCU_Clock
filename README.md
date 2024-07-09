@@ -37,14 +37,9 @@
 |   5V      | VCC  |
 |   GND     | GND  |
 
-### 구입처 
-
-The stl files for an enclosure are on thingiverse [here](https://www.thingiverse.com/thing:6125748) (Thanks Ryan!).
 
 ## 순서도
-[![](https://mermaid.ink/img/pako:eNptUj9PwkAU_yqXNxdCS8H2BhIDDiYaE3UyXRp6QhO4YmkTkZA4EEPEgQEjGiAMGBdNUMC4-IW44zt40BIVuKG9e78_92vfq0LWsQhgKJMLn9AsydhmzjWLBkVilUzXs7N2yaQe2nUt36bOJnB8mt4sHh3sZQwa1INnqI-kUkKA0b6SRvObKW8O1uGF9C-OVj5rDvNOnfdfEW92Z6M64oN7Np6I1zXvPwd8wRLcUIUXR8QfWiGFtbrr0t737Gu0uqzgOCUk80mDvTRYc4jYqMPG061BlsaB1Wz0vkjMn9r8421riv-phev8sbP9D7B2m98O5-07Nmjw3mQZPQz82WWD8CMJtQwKEhSJWzRtS3SyugAM8PKkSAzAYluwc17eAIPWBNH0PeekQrOAPdcnEvgly_RWbQd8bhbKokos23Pcw2A2liMigWjsmeP8csQZcBUuAcu6HtU0VdUUNSkruqJrElQAR2RZjcoJRY8lkrqaVNX4Tk2Cq6WHHI3H5ZhYWjKhJgRa-wEsOP1j?type=png)](https://mermaid.live/edit#pako:eNptUj9PwkAU_yqXNxdCS8H2BhIDDiYaE3UyXRp6QhO4YmkTkZA4EEPEgQEjGiAMGBdNUMC4-IW44zt40BIVuKG9e78_92vfq0LWsQhgKJMLn9AsydhmzjWLBkVilUzXs7N2yaQe2nUt36bOJnB8mt4sHh3sZQwa1INnqI-kUkKA0b6SRvObKW8O1uGF9C-OVj5rDvNOnfdfEW92Z6M64oN7Np6I1zXvPwd8wRLcUIUXR8QfWiGFtbrr0t737Gu0uqzgOCUk80mDvTRYc4jYqMPG061BlsaB1Wz0vkjMn9r8421riv-phev8sbP9D7B2m98O5-07Nmjw3mQZPQz82WWD8CMJtQwKEhSJWzRtS3SyugAM8PKkSAzAYluwc17eAIPWBNH0PeekQrOAPdcnEvgly_RWbQd8bhbKokos23Pcw2A2liMigWjsmeP8csQZcBUuAcu6HtU0VdUUNSkruqJrElQAR2RZjcoJRY8lkrqaVNX4Tk2Cq6WHHI3H5ZhYWjKhJgRa-wEsOP1j)
-
-
+![flowchart](/img/Clock-2024-07-09-062835.png)
 ## 라이브러리  
 - [RTCLib](https://github.com/adafruit/RTClib?tab=readme-ov-file)  
     : Adafruit사에서 만든 아두이노의 기본 RTC 기능에 대한 라이브러리입니다. DS1307, DS3231 및 PCF8523 지원됩니다.   
