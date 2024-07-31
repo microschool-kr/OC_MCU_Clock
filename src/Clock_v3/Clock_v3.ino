@@ -1,17 +1,19 @@
+//SSD1306 OLED 디스플레이에 표시하기 위한 라이브러리 
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-// Date and time functions using a DS3231 RTC connected via I2C and Wire lib
+// RTC 라이브러리
 #include "RTClib.h"
 
 RTC_DS3231 rtc;
 
 char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+// OLED 디스플레이 픽셀 설정
+#define SCREEN_WIDTH 128 
+#define SCREEN_HEIGHT 64 
 
-// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
-#define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
+// OLED를 I2C로 연결하고 있으므로, SDA, SCL 핀을 사용
+#define OLED_RESET     -1 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // 요일, 월, 년을 문자열로 변환하는 함수
@@ -63,14 +65,10 @@ void setup () {
     Serial.flush();
     while (1) delay(10);
   }
-
+  // RTC의 전원 손실 여부 확인
   if (rtc.lostPower()) {
     Serial.println("RTC lost power, let's set the time!");
-    // When time needs to be set on a new device, or after a power loss, the
-    // following line sets the RTC to the date & time this sketch was compiled
     rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
-    // This line sets the RTC with an explicit date & time, for example to set
-    // January 21, 2014 at 3am you would call:
     // rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));
   }
 
