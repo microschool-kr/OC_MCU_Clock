@@ -4,8 +4,6 @@
 
 ![img](./img/4_RTC_cover.jpg)
 
-[![YouTube Channel Views](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/hMjuODHlYIs?si=jaTwcX8FcCGYaMxg)
-
 ## 📝 프로젝트 소개
 이 프로젝트는 아두이노와 RTC(Real-Time Clock) 모듈, OLED 디스플레이를 활용하여 정전 후에도 정확한 시간을 유지하는 시계를 만드는 과정을 설명합니다. 날짜, 요일, 시간을 한눈에 볼 수 있는 디지털 시계를 직접 만들어볼 수 있습니다.
 
